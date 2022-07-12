@@ -1,0 +1,10 @@
+@use 'variables';
+
+.hide { 
+    max-height: 0;
+    overflow: hidden;
+    display: none;
+    &__form-input {
+        display: none;
+    }
+}

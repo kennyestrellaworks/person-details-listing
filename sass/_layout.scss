@@ -1,0 +1,120 @@
+@use 'variables';
+@use 'colors';
+@use 'components';
+@use 'fonts';
+
+.wrap {
+    &__screen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__viewport {
+        width: variables.$viewport-width; // A monitor  of 1920 width.
+        // background-color: tan;
+    }
+    &__content {
+        position: relative;
+        max-width: variables.$content-width; // Decided website content width.
+        // background-color: orange;
+        margin: 0 auto;
+    }
+}
+
+.employee-box {
+    &__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    &__content {
+        width: 32rem;
+        background-color: colors.$color-white;
+        display: block;
+        padding: 1rem;
+        box-shadow: variables.$box-shadow1;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+    &__basic-info {
+        width: 100%;
+        display: flex;
+    }
+    &__left {
+        width: 16%;
+    }
+    &__right {
+        width: 84%;
+    }
+    &__profile-image {
+        border-radius: 50%;
+        width: 4rem;
+    }
+    &__employee-id {
+        background-color: colors.$color-group-2a;
+        display: inline-block;
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        &-text {
+            color: colors.$color-white;
+            font-size: variables.$font-smallest;
+        }
+    }
+    &__employee-name{
+        margin-top: .4rem;
+        &-text {
+            font-family: fonts.$font-verdana-bold;
+            font-size: variables.$font-smaller;
+        }
+    }
+    &__employee-job {
+        &-text {
+            font-family: fonts.$font-verdana-italic;
+            color: colors.$color-group-3c;
+            font-size: variables.$font-smallest;
+            text-transform: capitalize;
+        }
+    }
+    &__employee-email {
+        &-text {
+            text-decoration: underline;
+            color: colors.$color-secondary;
+            font-size: variables.$font-smallest;
+        }
+    }
+    &__employee-social {
+        margin-top: .5rem;
+        display: flex;
+        &-link {
+            filter: grayscale(100%);
+            transition: all .5s;
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+        &-link:not(:last-child) {
+            margin-right: .2rem;
+        }
+        &-icon {
+            width: 2.4rem;
+        }
+    }
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: variables.$transition-all-slowest;
+}
+
+.control-buttons {
+    display: flex;
+    margin-top: 1rem;
+    &__btn {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

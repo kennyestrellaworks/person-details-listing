@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.svg#Roboto_Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Bold";
+  src: url("../fonts/Verdana-Bold.eot");
+  src: url("../fonts/Verdana-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Verdana-Bold.woff2") format("woff2"), url("../fonts/Verdana-Bold.woff") format("woff"), url("../fonts/Verdana-Bold.ttf") format("truetype"), url("../fonts/Verdana-Bold.svg#Verdana_Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Italic";
+  src: url("../fonts/Verdana-Italic.eot");
+  src: url("../fonts/Verdana-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Verdana-Italic.woff2") format("woff2"), url("../fonts/Verdana-Italic.woff") format("woff"), url("../fonts/Verdana-Italic.ttf") format("truetype"), url("../fonts/Verdana-Italic.svg#Verdana_Italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Regular";
+  src: url("../fonts/Verdana-Regular.eot");
+  src: url("../fonts/Verdana-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Verdana-Regular.woff2") format("woff2"), url("../fonts/Verdana-Regular.woff") format("woff"), url("../fonts/Verdana-Regular.ttf") format("truetype"), url("../fonts/Verdana-Regular.svg#Verdana_Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.heading__primary {
+  color: #006064;
+  text-transform: uppercase;
+}
+.heading__secondary {
+  font-weight: bold;
+  color: #26C6DA;
+}
+
+.button__default {
+  padding: 0.5rem 0;
+}
+.button__default--primary {
+  font-family: "Verdana Regular", sans-serif;
+  font-size: 1.2rem;
+  background-color: #FFFF00;
+  color: #00838F;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2rem solid #F57C00;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s;
+}
+.button__default--primary:hover {
+  background-color: #F57C00;
+  color: #FFFFFF;
+}
+
+.button__toggle {
+  background-color: tan;
+  position: relative;
+}
+.button__toggle-icon {
+  position: absolute;
+  width: 32rem;
+  top: -1rem;
+}
+.button__toggle-icon-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.button__toggle-icon-link {
+  background-color: #FFFF00;
+  border-left: 0.2rem solid #F57C00;
+  border-right: 0.2rem solid #F57C00;
+  border-bottom: 0.2rem solid #F57C00;
+  padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+  transition: all 0.5s;
+}
+.button__toggle-icon-link:hover {
+  background-color: #F57C00;
+}
+.button__toggle-icon-link-active {
+  background-color: #FFFF00;
+}
+.button__toggle-icon-link-active:hover {
+  background-color: #F57C00;
+}
+.button__toggle-icon-link path {
+  fill: #00838F;
+  transition: all 0.5s;
+}
+.button__toggle-icon-link:hover path {
+  fill: #FFFFFF;
+}
+.button__toggle-icon-link-active path {
+  fill: #00838F;
+}
+.button__toggle-icon-link-active:hover path {
+  fill: #FFFFFF;
+}
+.button__toggle-icon-link svg {
+  transition: all 0.5s;
+  transform: scaleY(-1);
+}
+.button__toggle-icon-link-active svg {
+  transition: all 0.5s;
+  transform: scaleY(1);
+}
+
+.form {
+  font-size: 1.2rem;
+}
+.form__heading {
+  text-transform: uppercase;
+  font-family: "Verdana Bold", sans-serif;
+  color: #00838F;
+  padding: 2rem 0 0.5rem 0;
+}
+.form__group {
+  display: flex;
+}
+.form__label {
+  font-family: "Verdana Bold", sans-serif;
+  color: #26C6DA;
+  text-transform: capitalize;
+}
+.form__input {
+  border: 1px solid #90A4AE;
+  font-family: "Verdana Regular", sans-serif;
+  text-transform: capitalize;
+  color: #90A4AE;
+  padding-left: 0.5rem;
+  width: 100%;
+  margin-left: 1rem;
+}
+.form__input::placeholder {
+  color: #90A4AE;
+  opacity: 1;
+}
+.form__input-display {
+  color: #90A4AE;
+  padding-left: 0.5rem;
+  text-transform: capitalize;
+}
+.form__input-display--highlight {
+  color: #455A64;
+}
+.form__employment-item {
+  display: flex;
+  width: 32rem;
+}
+.form__employment-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.form__employment-item-left {
+  position: relative;
+  width: 5%;
+}
+.form__employment-item-left::before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #CFD8DC;
+}
+.form__employment-item-right {
+  width: 95%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Verdana Regular", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.wrap__screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap__viewport {
+  width: 192rem;
+}
+.wrap__content {
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.employee-box__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.employee-box__content {
+  width: 32rem;
+  background-color: #FFFFFF;
+  display: block;
+  padding: 1rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.employee-box__content:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.employee-box__basic-info {
+  width: 100%;
+  display: flex;
+}
+.employee-box__left {
+  width: 16%;
+}
+.employee-box__right {
+  width: 84%;
+}
+.employee-box__profile-image {
+  border-radius: 50%;
+  width: 4rem;
+}
+.employee-box__employee-id {
+  background-color: #03A9F4;
+  display: inline-block;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+}
+.employee-box__employee-id-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.employee-box__employee-name {
+  margin-top: 0.4rem;
+}
+.employee-box__employee-name-text {
+  font-family: "Verdana Bold", sans-serif;
+  font-size: 1.2rem;
+}
+.employee-box__employee-job-text {
+  font-family: "Verdana Italic", sans-serif;
+  color: #90A4AE;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.employee-box__employee-email-text {
+  text-decoration: underline;
+  color: #2962FF;
+  font-size: 1rem;
+}
+.employee-box__employee-social {
+  margin-top: 0.5rem;
+  display: flex;
+}
+.employee-box__employee-social-link {
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+.employee-box__employee-social-link:hover {
+  filter: grayscale(0);
+}
+.employee-box__employee-social-link:not(:last-child) {
+  margin-right: 0.2rem;
+}
+.employee-box__employee-social-icon {
+  width: 2.4rem;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.control-buttons {
+  display: flex;
+  margin-top: 1rem;
+}
+.control-buttons__btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+}
+.hide__form-input {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

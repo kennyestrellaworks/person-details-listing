@@ -1,0 +1,21 @@
+@use 'colors';
+
+// Custom width
+$viewport-width: 192rem;
+$content-width: 120rem;
+
+// Transitions
+$transition-all-slower: all 0.3s;
+$transition-all-slowest: all 0.5s;
+
+// Text
+$font-smallest: 1rem;
+$font-smaller: 1.2rem;
+$font-small : 1.4rem;
+$font-normal: 1.6;
+$font-big: 1.8rem;
+$font-bigger: 2rem;
+$font-biggest: 2.2rem;
+
+// Box shadow
+$box-shadow1: 0px 0px 15px rgba(colors.$color-black, 0.2);

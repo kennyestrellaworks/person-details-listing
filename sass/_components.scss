@@ -1,0 +1,149 @@
+@use 'colors';
+@use 'variables';
+@use 'fonts';
+
+.heading {
+    &__primary {
+        color: colors.$color-group-1a;
+        text-transform: uppercase;
+    }
+    &__secondary {
+        font-weight: bold;
+        color: colors.$color-group-1d;
+    }
+}
+
+.button__default {
+    padding: 0.5rem 0;
+    &--primary {
+        font-family: fonts.$font-verdana-regular;
+        font-size: variables.$font-smaller;
+        background-color: colors.$color-tertiary;
+        color: colors.$color-group-1b;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: .2rem solid colors.$color-primary;
+        padding: .5rem 1rem;
+        transition: all .5s;
+        &:hover {
+            background-color: colors.$color-primary;
+            color: colors.$color-white;
+        }
+    }
+}
+
+.button__toggle {
+    background-color: tan;
+    position: relative;
+    &-icon {
+        position: absolute;
+        width: 32rem;
+        top: -1rem;
+        &-wrap {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-link {
+            background-color: colors.$color-tertiary;
+            border-left: .2rem solid colors.$color-primary;
+            border-right: .2rem solid colors.$color-primary;
+            border-bottom: .2rem solid colors.$color-primary;
+            padding: .5rem .3rem .3rem .3rem;
+            transition: all .5s;
+            &:hover {
+                background-color: colors.$color-primary;            
+            }
+            &-active {
+                background-color: colors.$color-tertiary;
+                &:hover {
+                    background-color: colors.$color-primary;
+                }         
+            }            
+            & path {
+                fill: colors.$color-group-1b;
+                transition: all .5s;
+            }
+            &:hover path {
+                fill: colors.$color-white;
+            }
+            &-active path {
+                fill: colors.$color-group-1b;
+            }
+            &-active:hover path {
+                fill: colors.$color-white;
+            }
+            & svg {
+                transition: all .5s;
+                transform: scaleY(-1);
+            }
+            &-active svg {
+                transition: all .5s;
+                transform: scaleY(1);
+            }
+        }
+    }
+}
+
+.form {
+    font-size: 1.2rem;
+    &__heading {
+        text-transform: uppercase;
+        font-family: fonts.$font-verdana-bold;
+        color: colors.$color-group-1b;
+        padding: 2rem 0 .5rem 0;
+    }
+    &__group {
+        display: flex;
+    }
+    &__label {
+        font-family: fonts.$font-verdana-bold;        
+        color: colors.$color-group-1d;
+        text-transform: capitalize;
+    }
+    &__input {
+        border: 1px solid colors.$color-group-3c;
+        font-family: fonts.$font-verdana-regular;
+        text-transform: capitalize;
+        color: colors.$color-group-3c;
+        padding-left: .5rem;
+        width: 100%;
+        margin-left: 1rem;
+        &::placeholder {            
+            color: colors.$color-group-3c;
+            opacity: 1;
+        }
+        &-display {
+            color: colors.$color-group-3c;
+            padding-left: .5rem;
+            text-transform: capitalize;
+            &--highlight {
+                color: colors.$color-group-3a;
+            }
+        }
+    }
+    &__employment {
+        &-item {
+            display: flex;
+            width: 32rem;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+            &-left {
+                position: relative;
+                width: 5%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: .3rem;
+                    width: .8rem;
+                    height: .8rem;
+                    border-radius: 50%;
+                    background-color: colors.$color-group-3d;
+                }
+            }
+            &-right {
+                width: 95%;
+            }
+        }
+    }
+}

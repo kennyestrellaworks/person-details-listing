@@ -1,0 +1,21 @@
+@use 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: fonts.$font-verdana-regular;
+    scroll-behavior: smooth;
+}
+
+
+

@@ -1,0 +1,26 @@
+{
+  "name": "employee-listing",
+  "version": "1.0.0",
+  "description": "A mini project about listing employees at the front-end.",
+  "main": "script.js",
+  "browserslist": "last 10 versions",
+  "scripts": {
+    "watchSass": "sass --watch sass/style.scss:css/style.css",
+    "liveServer": "live-server",
+    "prefixCSS": "postcss css/style.css --use autoprefixer -o css/style.prefix.css",
+    "uglifyCSS": "uglifycss css/style.prefix.css --output _dist/css/style.css",
+    "modifyCSS": "npm-run-all prefixCSS uglifyCSS",
+    "startDev": "npm-run-all --parallel watchSass liveServer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.51.0",
+    "uglifycss": "^0.0.29"
+  }
+}

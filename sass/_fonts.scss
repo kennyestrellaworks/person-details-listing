@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/Roboto-Light.eot");
+    src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Roboto-Light.woff2") format("woff2"),
+        url("../fonts/Roboto-Light.woff") format("woff"),
+        url("../fonts/Roboto-Light.ttf") format("truetype"),
+        url("../fonts/Roboto-Light.svg#Roboto_Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana Bold";
+    src: url("../fonts/Verdana-Bold.eot");
+    src: url("../fonts/Verdana-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Verdana-Bold.woff2") format("woff2"),
+        url("../fonts/Verdana-Bold.woff") format("woff"),
+        url("../fonts/Verdana-Bold.ttf") format("truetype"),
+        url("../fonts/Verdana-Bold.svg#Verdana_Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana Italic";
+    src: url("../fonts/Verdana-Italic.eot");
+    src: url("../fonts/Verdana-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Verdana-Italic.woff2") format("woff2"),
+        url("../fonts/Verdana-Italic.woff") format("woff"),
+        url("../fonts/Verdana-Italic.ttf") format("truetype"),
+        url("../fonts/Verdana-Italic.svg#Verdana_Italic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: "Verdana Regular";
+    src: url("../fonts/Verdana-Regular.eot");
+    src: url("../fonts/Verdana-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Verdana-Regular.woff2") format("woff2"),
+        url("../fonts/Verdana-Regular.woff") format("woff"),
+        url("../fonts/Verdana-Regular.ttf") format("truetype"),
+        url("../fonts/Verdana-Regular.svg#Verdana_Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-roboto-light: 'Roboto Light', sans-serif;
+$font-verdana-bold: 'Verdana Bold', sans-serif;
+$font-verdana-italic: 'Verdana Italic', sans-serif;
+$font-verdana-regular: 'Verdana Regular', sans-serif;
